@@ -1,0 +1,93 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	list-style:none;
+    direction:rtl;
+}
+
+html{
+	font-size:62.5%;
+
+	--color-gray-50: rgb(245,245,245);
+	--color-gray-100: rgb(216,216,216);
+    --color-gray-200: rgb(192,192,192);
+    --color-gray-300: rgb(168,168,168);
+    --color-gray-400: rgb(128,128,128);
+    --color-gray-500: rgb(80,80,80);
+    --color-gray-600: rgb(40,40,40);
+    --color-gray-700: rgb(8,8,8);
+
+    --color-blue-l-100: #CCF6FF;
+    --color-blue-l-200: #99E8FF;
+    --color-blue-l-300: #66D3FF;
+    --color-blue-l-400: #3FBDFF;
+    --color-blue-l-500: #0099FF;
+    --color-blue-l-600: #0076DB;
+    --color-blue-l-700: #0058B7;
+	--color-blue-l-800: #003E93;
+    --color-blue-l-900: #002C7A;
+
+	--color-blue-d-50: rgb(0, 51, 255);
+    --color-blue-d-100: rgb(0, 0, 255);
+    --color-blue-d-200: rgb(0, 0, 190);
+    --color-blue-d-400: rgb(0, 0, 153);
+    --color-blue-d-500: rgb(0, 0, 102);
+    --color-blue-d-700: rgb(0, 0, 51);
+
+    --border-radius-small: 4px;
+    --border-radius-medium: 6px;
+
+	--shadow-less: 0px 0px 10px 2px rgba(0,0,0,0.25);
+    --shadow-medium: 0px 0px 10px 2px rgba(0,0,0,0.5);
+	--shadow-blue:  0px 0px 10px 1px rgba(135, 206, 235, 0.5);
+}
+
+body {
+	font-family: "SF-Arabic", "BKoodakBold", 'Raleway', sans-serif;;
+	font-size:1.6rem;
+	color: var(--color-blue-d-700);
+    background-color: var(--color-blue-l-100);
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+}
+
+ol, ul{
+	text-decoration: none;
+}
+
+h1, h2, h3{
+	font-family: "IRANsans-black", "BYekan", IranianSans;
+	color: var(--color-blue-d-700);
+}
+
+.btn {
+	font: inherit;
+    border: none;
+    background-color: var(--color-blue-l-700);
+	color: var(--color-gray-100);
+    border-radius: 4px;
+    padding: 0.75rem 2.75rem;
+    cursor: pointer;
+    transition: top 5s;
+    border: 2px solid var(--color-blue-l-700);
+}
+
+.btn:hover {
+	position: relative;
+	top: 0.25rem;
+	background-color: var(--color-blue-d-100);
+}
+
+.btn-alt {
+    background-color: transparent;
+    border: 2px solid var(--color-blue-l-700);
+    color: var(--color-blue-l-700);
+}
+
+.btn-alt:hover{
+    background-color: var(--color-gray-100);
+}

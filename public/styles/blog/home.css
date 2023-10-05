@@ -1,0 +1,46 @@
+main section {
+    margin: 5rem auto;
+}
+
+main section form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5rem;
+}
+
+main section form div{
+    display: flex;
+} 
+
+main section form div:first-child{
+    width: 100%;
+}
+
+main section form input {
+    width: 70%;
+}
+
+#posts li{
+    background-color: var(--color-blue-l-200);
+    border-radius: var(--border-radius-medium);
+    padding: 5rem;
+    min-height: 35rem;
+}
+
+#posts li img{
+    width: calc(100% - 10rem);
+    max-width: 25rem;
+    min-width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    float: left;
+    margin: 0 1rem 1rem 0;
+    border-radius: var(--border-radius-small);
+}
+
+@media (max-width : 768px){
+    #posts li{
+        padding: auto;
+    }
+}
