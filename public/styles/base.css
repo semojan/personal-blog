@@ -76,7 +76,7 @@ h1, h2, h3{
     border: 2px solid var(--color-blue-l-700);
 }
 
-.btn:hover {
+.btn:is(:hover, :active) {
 	position: relative;
 	top: 0.25rem;
 	background-color: var(--color-blue-d-100);

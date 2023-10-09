@@ -29,7 +29,6 @@ main section form input {
 }
 
 #posts li img{
-    width: calc(100% - 10rem);
     max-width: 25rem;
     min-width: 20rem;
     height: 20rem;
@@ -39,8 +38,44 @@ main section form input {
     border-radius: var(--border-radius-small);
 }
 
+#posts h3{
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: var(--color-gray-500);
+}
+
+#posts button {
+    position: absolute;
+    bottom: 0;
+}
+
+#posts button:hover{
+	top: auto;
+    bottom: -0.25rem;
+	background-color: var(--color-blue-d-100);
+}
+
 @media (max-width : 768px){
     #posts li{
         padding: auto;
+    }
+}
+
+@media (max-width : 480px){
+    #posts li{
+        padding: 2.5rem;
+    }
+    
+    #posts li img{
+        float: none;
+        margin: auto;
+        width: 100%;
+        max-width:none;
+        min-width: none;
+    }
+
+    #posts button {
+        position: static;
+        margin-top: 1rem;
     }
 }
