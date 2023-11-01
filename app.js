@@ -17,4 +17,9 @@ app.get("/test", function(req, res){
     res.render("test");
 })
 
-app.listen(3300);
+db.connectToDB().then( function(){
+    app.listen(3300);
+}).catch( function(error) {
+    console.log("Failed to connect to the database!");
+    console.log(error);
+});
